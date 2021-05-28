@@ -1,0 +1,30 @@
+<%- include('../partials/header') %> 
+<%- include('../partials/navbar') %> 
+    <div class="container mt-4">
+        <section class="text-center">
+          <%- include('../partials/flash') %> 
+          <h4 class="display-4 mt-3">Payment Information</h4>
+        </section>
+        <div class="row col-lg-8 center-class">
+            <form class="needs-validation" method="POST" action="#" novalidate>
+                <div class="mb-3">
+                  <label for="no" class="form-label">Card Number</label>
+                  <input type="text" class="form-control" id="no">
+                </div>
+                <div class="mb-3">
+                  <label for="img" class="form-label">Expiry Date</label>
+                  <input type="date" class="form-control" id="img" required>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name on Card</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea name="desc" class="form-control" id="address" cols="30" rows="3" required></textarea>
+                  </div>
+                <button type="submit" class="btn btn-outline-primary">Next</button>
+              </form>
+        </div>
+    </div>
+<%- include('../partials/footer') %> 
